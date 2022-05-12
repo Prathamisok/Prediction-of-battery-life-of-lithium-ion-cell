@@ -9,7 +9,7 @@
   Although the dataset contains only 28 cells data but it is still the most diverse dataset out there available freely for use.
   
   The data for each cell included:
-  1. Each data is available in two forms which is **MATLAB** and **R**
+  1. Each data is available in two forms which is **MATLAB** and R
   2. **Comments** and **type** includes  charging policy and charging type respectively .
   3. **Cycle data** includes information for each cycle of each cell, and within each cycle,1000s of data points including time, relative time,voltage, current, , temperature.
 
