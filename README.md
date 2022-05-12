@@ -76,7 +76,7 @@ Goals are as follows;
 * Jupyter Notebook
 
 ## Contributors ##
-* Keshatwar Pratham Naresh 
+* [Keshatwar Pratham Naresh](https://github.com/Prathamisok)
 * Arsh Jindal
 * Arav Khandelwal
 * Prakhar Pratap Singh
