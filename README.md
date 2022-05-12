@@ -37,6 +37,8 @@ In the model we use two lstm layers initially and then 3 dense layers reducing t
 
 To boost the gradient desecent we use Adam Optimizer . In the overall model there are 1,24,801 parameters.
 
+- ![](/images/Model.png)
+
 ## Training and Validation ## 
 The preprocessed dataset was trained with model created. Various hyperparameters were used like learning rate,batch size and epoches etc.
 
@@ -72,3 +74,10 @@ Goals are as follows;
 * Scipy
 * Ploty
 * Jupyter Notebook
+
+## Contributors ##
+* Keshatwar Pratham Naresh 
+* Arsh Jindal
+* Arav Khandelwal
+* Prakhar Pratap Singh
+
