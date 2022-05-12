@@ -2,6 +2,11 @@
  Given various measurements of a Li-ion battery during a limited amount of charging cycles,predict how many cycles has a battery cell lived through and how many cycles will it last before it breaks.
 
 ## Motivation for the Project ##
+In the ﬁeld of Li-ion batteries, life prediction is an essential step before ﬁnal commercialization for various applications, including electric transportation. Lifetimes of 10 and 15 years are expected for electric vehicles (EVs) and hybrid electric vehicles, respectively. In terms of cycle life, a lifetime up to 3000 deep cycles at room temperature can be requested for high energy applications (typical for EVs).
+
+Interfacial-ﬁlm formation, structural degradations, positive-electrode-material dissolution, and loss of contact between the electrode and the current collector and within the electrode itself are among the most well-known aging sources of Li-ion batteries.
+
+Although these aging sources have been known for a long time, effective tools for an accurate life prediction of Li-ion batteries have not been completely achieved yet due to the complexity of the problem: An accurate experimental diagnostics of aging phenomena and their proper mathematical description for life-prediction models are still challenging issues.
 
 ## Dataset Used ##
   The dataset used is [*Randomized Battery Usage Data Set*](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/publications/#batteryrnddischarge) published by the NASA . A comprehsive dataset consisting data of commercial 28 lithium ion cells cycled under different types of conditions with widely varying cycleslives of 250-900 cycles was generated.
@@ -81,5 +86,5 @@ Goals are as follows;
 * [Keshatwar Pratham Naresh](https://github.com/Prathamisok)
 * Arsh Jindal
 * Arav Khandelwal
-* Prakhar Pratap Singh
+* [Prakhar Pratap Singh](https://github.com/G1lligan)
 
