@@ -46,8 +46,7 @@ Best accuracy was achieved with 500 epochs, 0.3, 0.000001 learning rate, batch s
 
 We train our model on 20 cells data which include validation also and use 4 cells data for testing .Training loss was 0.0214.
 
-- ![](/images/loss image.png)
-- ![](images/loss image.png)
+- ![](/images/test.png)
 
 ## Testing And Prediction results ##
 
