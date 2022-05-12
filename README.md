@@ -11,12 +11,12 @@
   The data for each cell included:
   1. Each data is available in two forms which is **MATLAB** and **R**
   2. **Comments** and **type** includes  charging policy and charging type respectively .
-  3. **Cycle data** includes information for each cycle of each cell, and within each cycle,1000s of data points including time, relative time,voltage, current, , temperature.
+  3. **Cycle data** includes information for each cycle of each cell, and within each cycle,thousands of data points including time, relative time,voltage, current, , temperature.
 
 ## Data Preprocessing ##
 We first count valid cycles in the dataset as rest after rest is not a cycle .
 
-After that another problem is with cycle type some were reference and most of them were randomized cycles . 
+Another problem is with cycle-type; some were references, and most of them were randomized cycles. 
 So after this we created our own four parameters cycle_X,battery_count,current and time. cycle_X contain parameters like voltage ,current ,temperature.
 
 ## Further Processing the data into input form ##
@@ -24,20 +24,20 @@ The framework used for the training was Tensorflow 2.0 with keras as backend.
 
 We decided to perform a deep learning approach using LSTM to train the model.
 
-The dataset was further converted in a format compatible with the inputs for LSTM.For this we need to covert it to sequential time series form which is required for the future prediction.
+The dataset was further converted into a format compatible with the inputs for LSTM. Hence, we need to convert it to sequential time-series form, which is required for the future prediction.
 
-We have done some tasks like compressing the datset to reduce the training time and limiting zeros,unifying dataset for further use. Also prepare parameters of predicted values.
+We have done some tasks like compressing the dataset to reduce the training time and limiting zeros, unifying the dataset for further use. Also, prepare parameters of predicted values.
 
-Another problem is that the parameters ranges different so we need to **Normalise** data and **denormalise** the predicted data.
+Another problem is that the parameter ranges are different, so we need to *Normalise* data and *denormalize* the predicted data.
 
 ## *Structure* of the Model ##
-Functional API of keras was used, for building up the model layer by layer ,as it required multiple layers which is shown as follows.
-
-In the model we use two lstm layers initially and then 3 dense layers reducing the dimension to predict capacity. In  the we use *selu* actiation with the l2 regularization. And we Mask the input parameters initially.
-
-To boost the gradient desecent we use Adam Optimizer . In the overall model there are 1,24,801 parameters.
+The functional API of Keras was used to build up the model layer by layer, as it required multiple layers, shown as follows.
 
 - ![](/images/Model.png)
+
+In the model, we initially use two LSTM layers and then three dense layers to reduce the dimension to predict capacity. In we use selu actiation with the l2 regularization. And we Mask the input parameters initially.
+
+To boost the gradient desecent we use Adam Optimizer . In the overall model there are 1,24,801 parameters.
 
 ## Training and Validation ## 
 The preprocessed dataset was trained with model created. Various hyperparameters were used like learning rate,batch size and epoches etc.
