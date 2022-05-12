@@ -56,3 +56,11 @@ RW-15  | 0.007129 | 0.06200 | 0.08443
 RW-24  | 0.007129 | 0.03405 | 0.04597
 RW-28  | 0.001337 | 0.02697 | 0.03657
 
+We can reduce the losses by increasing the epochs (currently at 500 ) to 700 or 900.
+
+
+## Future Goals ##
+Goals are as follows;
+* Reducing the loss by increasing training.
+* Adding models like autoencoder to improve the results.
+* To use the results obtained to predict realtime life-time for various Li-ion batteries, including the phone and laptop batteries and Electric vehicles.
