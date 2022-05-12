@@ -64,3 +64,11 @@ Goals are as follows;
 * Reducing the loss by increasing training.
 * Adding models like autoencoder to improve the results.
 * To use the results obtained to predict realtime life-time for various Li-ion batteries, including the phone and laptop batteries and Electric vehicles.
+
+## Requirements ##
+* Tensorflow
+* Pandas
+* Sklearn
+* Scipy
+* Ploty
+* Jupyter Notebook
